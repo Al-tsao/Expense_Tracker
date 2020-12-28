@@ -32,13 +32,13 @@
 1. 開啟終端機(Terminal) 或 (Git Bash) 到欲存放專案的本機位置並執行:
 
 ```
-git https://github.com/Al-tsao/New_Restaurant_List_Project_V3.git
+git https://github.com/Al-tsao/Expense_Tracker.git
 ```
 
 2. 開啟終端機(Terminal) 或 (Git Bash)，進入到存放此專案的資料夾
 
 ```
-cd New_Restaurant_List_Project_V3-master
+cd Expense_Tracker-master
 ```
 
 3. 安裝 npm 套件
@@ -57,6 +57,7 @@ cd New_Restaurant_List_Project_V3-master
 
 ```
 在 Git Bash 或 (Terminal) 輸入 npm run seed
+```
 
 6. 執行app
 
