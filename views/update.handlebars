@@ -1,0 +1,66 @@
+<form action="/update/confirm/{{expenseItem._id}}" method="POST">
+  <div class="container">
+
+    <div class="form-row mb-5">
+      <div class="form-group col-2 offset-2">
+        <h5 style="text-align: end;">*必填欄位</h5>
+      </div>
+      <div class="form-group col-4">
+        <h1 style="text-align: center; font-size: 3rem"><strong>請修改你的支出</strong></h1>
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="form-group col-2 offset-2">
+        <h6 style="text-align: end; font-size: 1.75rem">名稱*:</h6>
+      </div>
+      <div class="form-group col-4">
+        <input type="text" class="form-control  form-border form-control-lg" id="inputName" name="name" placeholder=""
+          value="{{expenseItem.name}}" required>
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="form-group col-2 offset-2">
+        <h6 style="text-align: end; font-size: 1.75rem">日期*:</h6>
+      </div>
+      <div class="form-group col-4">
+        <input type="date" class="form-control  form-border form-control-lg" id="inputDate" name="date" placeholder=""
+          value="{{expenseItem.date}}" required>
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="form-group col-2 offset-2">
+        <h6 style="text-align: end; font-size: 1.75rem">類別*:</h6>
+      </div>
+      <div class="form-group col-4">
+        <select class="form-control form-control-lg form-border" name="category" style="font-size: 1.25rem;" required>
+          <option value="">select</option>
+          <option {{#ifEqual expenseItem.category "家居物業"}}selected{{/ifEqual}}>家居物業</option>
+          <option {{#ifEqual expenseItem.category "交通出行"}}selected{{/ifEqual}}>交通出行</option>
+          <option {{#ifEqual expenseItem.category "休閒娛樂"}}selected{{/ifEqual}}>休閒娛樂</option>
+          <option {{#ifEqual expenseItem.category "餐飲食品"}}selected{{/ifEqual}}>餐飲食品</option>
+          <option {{#ifEqual expenseItem.category "其他"}}selected{{/ifEqual}}>其他</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row mb-4">
+      <div class="form-group col-2 offset-2">
+        <h6 style="text-align: end; font-size: 1.75rem">金額*:</h6>
+      </div>
+      <div class="form-group col-4">
+        <input type="Number" class="form-control  form-border form-control-lg" id="inputAmount" name="amount"
+          placeholder="" value="{{expenseItem.amount}}" required>
+      </div>
+    </div>
+
+    <div class="form-row justify-content-md-center">
+      <div class="form-group">
+        <button type="submit" class="btn btn btn-info" style="font-size: 2rem;"><strong>送出修改支出</strong></button>
+      </div>
+    </div>
+
+  </div>
+</form>

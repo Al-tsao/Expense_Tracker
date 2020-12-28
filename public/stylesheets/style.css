@@ -1,0 +1,7 @@
+.flex-wrap{
+  display: flex;
+  align-items: center;
+}
+.form-border{
+  border: 3px black solid;
+}

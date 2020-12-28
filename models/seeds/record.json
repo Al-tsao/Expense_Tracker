@@ -1,0 +1,37 @@
+[
+  {
+    "name": "買沙發",
+    "category": "家居物業",
+    "date": "2020-11-11",
+    "icon": "<i class='fas fa-home'></i>",
+    "amount": 123
+  },
+  {
+    "name": "買車",
+    "category": "交通出行",
+    "date": "2020-11-11",
+    "icon": "<i class='fas fa-shuttle-van'></i>",
+    "amount": 234
+  },
+  {
+    "name": "看電影",
+    "category": "休閒娛樂",
+    "date": "2020-11-11",
+    "icon": "<i class='fas fa-grin-beam'></i>",
+    "amount": 345
+  },
+  {
+    "name": "吃牛排",
+    "category": "餐飲食品",
+    "date": "2020-11-11",
+    "icon": "<i class='fas fa-utensils'></i>",
+    "amount": 456
+  },
+  {
+    "name": "買樂透",
+    "category": "其他",
+    "date": "2020-11-11",
+    "icon": "<i class='fas fa-pen'></i>",
+    "amount": 567
+  }
+]
